@@ -4,7 +4,7 @@
 
 ### Prerequisites
 - GitHub account
-- Domain name (shashankarava.io)
+- Domain name (ssarava.github.io)
 - Git installed on your computer
 - Node.js and npm installed
 
