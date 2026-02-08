@@ -16,21 +16,6 @@ mobileMenuBtn.addEventListener("click", () => {
   }
 });
 
-// make email copiable upon click
-const spanElement = document.getElementById("clickToCopySpan");
-
-spanElement.addEventListener("click", () => {
-  const textToCopy = spanElement.textContent;
-  navigator.clipboard
-    .writeText(textToCopy)
-    .then(() => {
-      alert("Copied: " + textToCopy);
-    })
-    .catch((err) => {
-      console.error("Could not copy text: ", err);
-    });
-});
-
 // Close mobile menu when clicking on a link
 navLinkItems.forEach((link) => {
   link.addEventListener("click", () => {
@@ -135,25 +120,6 @@ const updateYear = () => {
 };
 
 updateYear();
-
-// Typing Effect for Hero Subtitle (Optional Enhancement)
-const subtitle = document.querySelector(".subtitle");
-if (subtitle) {
-  const originalText = subtitle.textContent;
-  subtitle.textContent = "";
-  let charIndex = 0;
-
-  const typeEffect = () => {
-    if (charIndex < originalText.length) {
-      subtitle.textContent += originalText.charAt(charIndex);
-      charIndex++;
-      setTimeout(typeEffect, 50);
-    }
-  };
-
-  // Start typing effect after a short delay
-  setTimeout(typeEffect, 500);
-}
 
 // Parallax Effect for Background Gradients
 window.addEventListener("mousemove", (e) => {
