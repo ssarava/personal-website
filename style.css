@@ -365,6 +365,10 @@ body {
   border: 2px solid var(--border-color);
 }
 
+.inspo {
+  color: var(--primary-color);
+}
+
 .social-links a:hover {
   color: var(--primary-color);
   border-color: var(--primary-color);
