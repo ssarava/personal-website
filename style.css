@@ -295,13 +295,6 @@ body {
   font-weight: 300;
 }
 
-.welcome-typed {
-  font-size: clamp(1.2rem, 3vw, 2rem);
-  color: var(--text-secondary);
-  /* margin-bottom: 1.5rem; */
-  font-weight: 300;
-}
-
 .intro-content .bio {
   font-size: 1.1rem;
   color: var(--text-secondary);
@@ -404,7 +397,7 @@ a {
 
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .section-header h2 {
@@ -593,6 +586,13 @@ a {
 .project-content h3 {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+.project-content .vulnerability {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
 }
 
 .project-content > p {
